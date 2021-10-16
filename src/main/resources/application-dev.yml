@@ -7,14 +7,12 @@ spring:
           driver-class-name: com.mysql.cj.jdbc.Driver
           url: jdbc:mysql://127.0.0.1:3306/babytun?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
           username: root
-          password: startRain999
+          password: root
         master:
           driver-class-name: com.mysql.cj.jdbc.Driver
           url: jdbc:mysql://localhost:3307/blog?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
-          #          username: start
-          #          使用localhost时可以使用root账户，使用ip等远程连接使用start
           username: root
-          password: Mysql8@crazy
+          password: root
   redis:
     host: localhost
   #    port: 6379
