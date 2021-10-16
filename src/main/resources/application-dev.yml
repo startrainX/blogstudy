@@ -1,0 +1,49 @@
+spring:
+  datasource:
+    dynamic:
+      p6spy: true
+      datasource:
+        mysql:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://127.0.0.1:3306/babytun?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+          username: root
+          password: startRain999
+        master:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://localhost:3307/blog?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+          #          username: start
+          #          使用localhost时可以使用root账户，使用ip等远程连接使用start
+          username: root
+          password: Mysql8@crazy
+  redis:
+    host: localhost
+  #    port: 6379
+  #    lettuce:
+  #      pool:
+  #        # 连接池最大阻塞等待时间（使用负值表示没有限制） 默认 -1
+  #        max-wait: -1
+  #        # 连接池最大连接数（使用负值表示没有限制） 默认 8
+  #        max-active: 8
+  #        # 连接池中的最大空闲连接 默认 8
+  #        max-idle: 8
+  #        # 连接池中的最小空闲连接 默认 0
+  #        min-idle: 0
+
+  thymeleaf:
+    prefix: classpath:/templates/
+
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**.xml
+  type-aliases-package: com.example.blogstudy.entity
+  global-config:
+    # 逻辑删除配置
+    db-config:
+      # 删除前
+      logic-not-delete-value: 1
+      # 删除后
+      logic-delete-value: 0
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+    auto-mapping-behavior: full

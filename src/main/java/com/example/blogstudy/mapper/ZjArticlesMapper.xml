@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.blogstudy.dao.ZjArticlesMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.blogstudy.entity.ZjArticles">
+        <id column="id" property="id" />
+        <result column="article_id" property="articleId" />
+        <result column="user_id" property="userId" />
+        <result column="article_title" property="articleTitle" />
+        <result column="article_content" property="articleContent" />
+        <result column="article_views" property="articleViews" />
+        <result column="article_comment_count" property="articleCommentCount" />
+        <result column="article_date" property="articleDate" />
+        <result column="article_like_count" property="articleLikeCount" />
+    </resultMap>
+
+</mapper>
