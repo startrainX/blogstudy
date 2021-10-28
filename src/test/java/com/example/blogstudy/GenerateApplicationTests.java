@@ -17,16 +17,16 @@ import org.springframework.test.context.TestPropertySource;
 class GenerateApplicationTests {
 
     @Value("${datasource.url}")
-    private String dataSourceurl;
+    private String dataSourceUrl;
 
     @Value("${datasource.username}")
-    private String dataSourcename;
+    private String dataSourceName;
 
     @Value("${datasource.password}")
-    private String dataSourcepassword;
+    private String dataSourcePassword;
 
     @Value("${datasource.driver-class-name}")
-    private String dataSourcedriver;
+    private String dataSourceDriver;
 
     @Value("${datatables.name}")
     private String tables;
@@ -40,10 +40,10 @@ class GenerateApplicationTests {
     @Test
     void generateMybatisPlusTest() {
         new GenerateMybatisPlus().generate(
-                dataSourceurl,
-                dataSourcename,
-                dataSourcepassword,
-                dataSourcedriver,
+                dataSourceUrl,
+                dataSourceName,
+                dataSourcePassword,
+                dataSourceDriver,
                 tables,
                 packageParent,
                 false);

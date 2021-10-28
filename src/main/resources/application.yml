@@ -10,7 +10,7 @@ server:
   port: 9119
 
 mybatis-plus:
-  mapper-locations: classpath:/mapper/**.xml
+  mapper-locations: classpath*:com/example/blogstudy/mapper/**.xml
   type-aliases-package: com.example.blogstudy.entity
   global-config:
     # 逻辑删除配置

@@ -23,10 +23,10 @@ public class GenerateMybatisPlus {
 
 
     /**
-     * @param dataSourceurl
-     * @param dataSourcename
-     * @param dataSourcepassword
-     * @param dataSourcedriver
+     * @param dataSourceUrl
+     * @param dataSourceName
+     * @param dataSourcePassword
+     * @param dataSourceDriver
      * @param tables
      * @param packageParent
      * @param isNormalize
@@ -35,7 +35,7 @@ public class GenerateMybatisPlus {
      * @author: liyh
      * @time: 2020/12/21 21:21
      */
-    public void generate(String dataSourceurl, String dataSourcename, String dataSourcepassword, String dataSourcedriver, String tables, String packageParent, boolean isNormalize) {
+    public void generate(String dataSourceUrl, String dataSourceName, String dataSourcePassword, String dataSourceDriver, String tables, String packageParent, boolean isNormalize) {
 
         AutoGenerator mpg = new AutoGenerator();
         // 配置策略
@@ -43,7 +43,7 @@ public class GenerateMybatisPlus {
         GlobalConfig gc = new GlobalConfig();
         String projectPath = System.getProperty("user.dir");// 当前项目的路径
         gc.setOutputDir(projectPath + "/src/main/java");// 生成文件输出根目录
-        gc.setAuthor("liyh");// 作者
+        gc.setAuthor("zsp");// 作者
         gc.setOpen(false); // 生成完成后不弹出文件框
         gc.setFileOverride(true); // 文件是否覆盖
         gc.setIdType(IdType.ASSIGN_UUID); //主键策略 实体类主键ID类型
@@ -55,6 +55,7 @@ public class GenerateMybatisPlus {
         gc.setBaseColumnList(false);//【不懂】 XML columList xml映射文件的配置
 
         // 自定义文件命名，注意 %s 会自动填充表实体属性！
+        gc.setEntityName("%sEntity");
         gc.setControllerName("%sController");
         gc.setServiceName("%sService");
         gc.setServiceImplName("%sServiceImpl");
@@ -65,10 +66,10 @@ public class GenerateMybatisPlus {
         //2、设置数据源
         DataSourceConfig dsc = new DataSourceConfig();
         dsc.setDbType(DbType.MYSQL);
-        dsc.setUrl(dataSourceurl);
-        dsc.setDriverName(dataSourcedriver);
-        dsc.setUsername(dataSourcename);
-        dsc.setPassword(dataSourcepassword);
+        dsc.setUrl(dataSourceUrl);
+        dsc.setDriverName(dataSourceDriver);
+        dsc.setUsername(dataSourceName);
+        dsc.setPassword(dataSourcePassword);
         mpg.setDataSource(dsc);
 
         //3、包的配置
