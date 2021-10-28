@@ -46,7 +46,7 @@ public class GenerateMybatisPlus {
         gc.setAuthor("zsp");// 作者
         gc.setOpen(false); // 生成完成后不弹出文件框
         gc.setFileOverride(true); // 文件是否覆盖
-        gc.setIdType(IdType.ASSIGN_UUID); //主键策略 实体类主键ID类型
+        gc.setIdType(IdType.AUTO); //主键策略 实体类主键ID类型
         gc.setDateType(DateType.ONLY_DATE);
         gc.setSwagger2(true); // 是否开启swagger
         gc.setActiveRecord(true); //【不懂】 活动记录 不需要ActiveRecord特性的请改为false 是否支持AR模式
