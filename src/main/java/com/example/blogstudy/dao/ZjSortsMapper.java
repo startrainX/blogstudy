@@ -1,6 +1,6 @@
 package com.example.blogstudy.dao;
 
-import com.example.blogstudy.entity.ZjSorts;
+import com.example.blogstudy.domain.entity.ZjSorts;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 

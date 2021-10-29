@@ -3,12 +3,12 @@
 <mapper namespace="com.example.blogstudy.dao.ZjLabelsMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.example.blogstudy.entity.ZjLabels">
-        <id column="id" property="id" />
-        <result column="label_id" property="labelId" />
-        <result column="label_name" property="labelName" />
-        <result column="label_alias" property="labelAlias" />
-        <result column="label_description" property="labelDescription" />
+    <resultMap id="BaseResultMap" type="com.example.blogstudy.domain.entity.ZjLabels">
+        <id column="id" property="id"/>
+        <result column="label_id" property="labelId"/>
+        <result column="label_name" property="labelName"/>
+        <result column="label_alias" property="labelAlias"/>
+        <result column="label_description" property="labelDescription"/>
     </resultMap>
 
 </mapper>

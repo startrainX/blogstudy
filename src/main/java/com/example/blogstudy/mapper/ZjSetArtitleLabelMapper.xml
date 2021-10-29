@@ -3,10 +3,10 @@
 <mapper namespace="com.example.blogstudy.dao.ZjSetArtitleLabelMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.example.blogstudy.entity.ZjSetArtitleLabel">
-        <id column="id" property="id" />
-        <result column="article_id" property="articleId" />
-        <result column="label_id" property="labelId" />
+    <resultMap id="BaseResultMap" type="com.example.blogstudy.domain.entity.ZjSetArtitleLabel">
+        <id column="id" property="id"/>
+        <result column="article_id" property="articleId"/>
+        <result column="label_id" property="labelId"/>
     </resultMap>
 
 </mapper>

@@ -3,10 +3,10 @@
 <mapper namespace="com.example.blogstudy.dao.ZjSetArtitleSortMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.example.blogstudy.entity.ZjSetArtitleSort">
-        <id column="id" property="id" />
-        <result column="article_id" property="articleId" />
-        <result column="sort_id" property="sortId" />
+    <resultMap id="BaseResultMap" type="com.example.blogstudy.domain.entity.ZjSetArtitleSort">
+        <id column="id" property="id"/>
+        <result column="article_id" property="articleId"/>
+        <result column="sort_id" property="sortId"/>
     </resultMap>
 
 </mapper>

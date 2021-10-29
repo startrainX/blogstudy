@@ -1,4 +1,4 @@
-package com.example.blogstudy.entity;
+package com.example.blogstudy.domain.entity;
 
 import lombok.Data;
 

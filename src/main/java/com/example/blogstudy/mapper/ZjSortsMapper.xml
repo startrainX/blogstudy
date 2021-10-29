@@ -3,13 +3,13 @@
 <mapper namespace="com.example.blogstudy.dao.ZjSortsMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.example.blogstudy.entity.ZjSorts">
-        <id column="id" property="id" />
-        <result column="sort_id" property="sortId" />
-        <result column="sort_name" property="sortName" />
-        <result column="sort_alias" property="sortAlias" />
-        <result column="sort_description" property="sortDescription" />
-        <result column="parent_sort_id" property="parentSortId" />
+    <resultMap id="BaseResultMap" type="com.example.blogstudy.domain.entity.ZjSorts">
+        <id column="id" property="id"/>
+        <result column="sort_id" property="sortId"/>
+        <result column="sort_name" property="sortName"/>
+        <result column="sort_alias" property="sortAlias"/>
+        <result column="sort_description" property="sortDescription"/>
+        <result column="parent_sort_id" property="parentSortId"/>
     </resultMap>
 
 </mapper>

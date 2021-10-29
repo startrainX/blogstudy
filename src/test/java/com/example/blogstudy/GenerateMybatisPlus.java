@@ -79,7 +79,7 @@ public class GenerateMybatisPlus {
         pc.setService("service"); // 同上
         pc.setServiceImpl("service.impl"); // 同上
         pc.setMapper("dao"); // 默认是mapper
-        pc.setEntity("entity"); // 默认是entity
+        pc.setEntity("domain.entity"); // 默认是entity
         pc.setXml("mapper"); // 默认是默认是mapper.xml
         pc.setModuleName(""); // 控制层请求地址的包名显示
         mpg.setPackageInfo(pc);

@@ -1,12 +1,13 @@
-package com.example.blogstudy.entity;
+package com.example.blogstudy.domain.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableField;
+
 import java.io.Serializable;
-import com.baomidou.mybatisplus.annotation.TableName;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -15,7 +16,7 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 文章标签对应表
+ * 文章类别表
  * </p>
  *
  * @author liyh
@@ -24,9 +25,9 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("zj_set_artitle_label")
-@ApiModel(value = "ZjSetArtitleLabel对象", description = "文章标签对应表")
-public class ZjSetArtitleLabel extends Model<ZjSetArtitleLabel> {
+@TableName("zj_set_artitle_sort")
+@ApiModel(value = "ZjSetArtitleSort对象", description = "文章类别表")
+public class ZjSetArtitleSort extends Model<ZjSetArtitleSort> {
 
     private static final long serialVersionUID = 1L;
 
@@ -38,8 +39,10 @@ public class ZjSetArtitleLabel extends Model<ZjSetArtitleLabel> {
     @TableField("article_id")
     private Long articleId;
 
-    @TableField("label_id")
-    private Long labelId;
+    //分类ID
+    @ApiModelProperty(value = "分类ID")
+    @TableField("sort_id")
+    private Long sortId;
 
 
     @Override

@@ -3,12 +3,12 @@
 <mapper namespace="com.example.blogstudy.dao.ZjUserFriendsMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.example.blogstudy.entity.ZjUserFriends">
-        <id column="id" property="id" />
-        <result column="user_id" property="userId" />
-        <result column="user_friends_id" property="userFriendsId" />
-        <result column="user_note" property="userNote" />
-        <result column="user_status" property="userStatus" />
+    <resultMap id="BaseResultMap" type="com.example.blogstudy.domain.entity.ZjUserFriends">
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="user_friends_id" property="userFriendsId"/>
+        <result column="user_note" property="userNote"/>
+        <result column="user_status" property="userStatus"/>
     </resultMap>
 
 </mapper>

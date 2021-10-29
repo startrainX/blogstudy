@@ -1,6 +1,6 @@
 package com.example.blogstudy.service;
 
-import com.example.blogstudy.entity.ZjSetArtitleSort;
+import com.example.blogstudy.domain.entity.ZjSetArtitleSort;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

@@ -1,6 +1,6 @@
 package com.example.blogstudy.service.impl;
 
-import com.example.blogstudy.entity.ZjUsers;
+import com.example.blogstudy.domain.entity.ZjUsers;
 import com.example.blogstudy.dao.ZjUsersMapper;
 import com.example.blogstudy.service.ZjUsersService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

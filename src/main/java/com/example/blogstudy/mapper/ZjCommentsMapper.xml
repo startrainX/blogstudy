@@ -3,15 +3,15 @@
 <mapper namespace="com.example.blogstudy.dao.ZjCommentsMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.example.blogstudy.entity.ZjComments">
-        <id column="id" property="id" />
-        <result column="comment_id" property="commentId" />
-        <result column="user_id" property="userId" />
-        <result column="article_id" property="articleId" />
-        <result column="comment_like_count" property="commentLikeCount" />
-        <result column="comment_date" property="commentDate" />
-        <result column="comment_content" property="commentContent" />
-        <result column="parent_comment_id" property="parentCommentId" />
+    <resultMap id="BaseResultMap" type="com.example.blogstudy.domain.entity.ZjComments">
+        <id column="id" property="id"/>
+        <result column="comment_id" property="commentId"/>
+        <result column="user_id" property="userId"/>
+        <result column="article_id" property="articleId"/>
+        <result column="comment_like_count" property="commentLikeCount"/>
+        <result column="comment_date" property="commentDate"/>
+        <result column="comment_content" property="commentContent"/>
+        <result column="parent_comment_id" property="parentCommentId"/>
     </resultMap>
 
 </mapper>

@@ -1,6 +1,6 @@
 package com.example.blogstudy.service;
 
-import com.example.blogstudy.entity.ZjSorts;
+import com.example.blogstudy.domain.entity.ZjSorts;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

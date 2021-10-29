@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.blogstudy.common.ExceptionEnum;
 import com.example.blogstudy.common.ResultEntity;
-import com.example.blogstudy.entity.ZjArticles;
+import com.example.blogstudy.domain.entity.ZjArticles;
 import com.example.blogstudy.service.ZjArticlesService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

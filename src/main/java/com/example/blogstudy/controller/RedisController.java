@@ -1,7 +1,7 @@
 package com.example.blogstudy.controller;
 
 import com.alibaba.fastjson.JSONArray;
-import com.example.blogstudy.entity.UserEntity;
+import com.example.blogstudy.domain.entity.UserEntity;
 import com.example.blogstudy.utils.RedisUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
