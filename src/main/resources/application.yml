@@ -11,7 +11,7 @@ server:
 
 mybatis-plus:
   mapper-locations: classpath*:com/example/blogstudy/mapper/**.xml
-  type-aliases-package: com.example.blogstudy.entity
+  type-aliases-package: com.example.blogstudy.domain.entity
   global-config:
     # 逻辑删除配置
     db-config:
