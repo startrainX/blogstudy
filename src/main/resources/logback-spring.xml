@@ -13,7 +13,7 @@
 
     <!--web应用名称-->
     <contextName>itp-informationManagement-provider</contextName>
-    <!--定义一个日志存放目录属性，方便修改-->
+    <!--定义一个日志存放目录属性，方便修改 value="/var/log/blogstudy"-->
     <property name="filePath" value="../b_logs"/>
     <!--获取时间戳字符串，key为名称，datePattern为格式化时间戳为指定格式字符串-->
     <timestamp key="time" datePattern="yyyyMMdd'T'HHmmss"/>
