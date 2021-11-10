@@ -68,7 +68,8 @@ public class CustomWebSocketHandler {
     @OnMessage
     public void onMessage(String message, Session session) {
         log.info("服务端收到客户端【{}】的消息，：{}", session.getId(), message);
-        this.sendMessageToUser(message, session);
+        // 发送消息调换方法
+        this.sendMessageAll(message, session);
     }
 
     /**
