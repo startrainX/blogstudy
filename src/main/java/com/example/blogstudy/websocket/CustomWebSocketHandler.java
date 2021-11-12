@@ -18,6 +18,8 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @description: websocket 允许服务端主动向客户端推送数据的一种基于tcp连接的全双工通信协议
  * 前后端交互的类实现消息的接收推送（自己发送给自己）
  * @ServerEndpoint(value = "/ws/first") 前端通过此uri和后端交互，建立连接
+ * 此文件下的websocket示例和WebSocketConfig已经可以和templates下的index页面进行配合来简单的完成群发、单发了；
+ * 其他几个是stomp的学习和整合，可以不用
  */
 @Slf4j
 @Component
