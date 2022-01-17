@@ -17,20 +17,22 @@ import lombok.experimental.Accessors;
 </#if>
 
 /**
- * <p>
- * ${table.comment!}
- * </p>
- *
- * @author ${author}
- * @since ${date}
- */
+* <p>
+* ${table.comment!}
+* </p>
+*
+* @author ${author}
+* @since ${date}
+*/
 <#if entityLombokModel>
 @Data
-    <#if superEntityClass??>
+@NoArgsConstructor
+@AllArgsConstructor
+<#if superEntityClass??>
 @EqualsAndHashCode(callSuper = true)
-    <#else>
+<#else>
 @EqualsAndHashCode(callSuper = false)
-    </#if>
+</#if>
 @Accessors(chain = true)
 </#if>
 <#if table.convert>
@@ -55,7 +57,9 @@ public class ${entity} implements Serializable {
     </#if>
 
     <#if field.comment!?length gt 0>
-    //${field.comment}
+    /**
+    * ${field.comment}
+    */
     <#if swagger2>
     @ApiModelProperty(value = "${field.comment}")
     <#else>
