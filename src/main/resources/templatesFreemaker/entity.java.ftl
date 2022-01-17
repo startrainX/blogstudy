@@ -11,8 +11,10 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 </#if>
 <#if entityLombokModel>
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 </#if>
 
@@ -132,7 +134,7 @@ public class ${entity} implements Serializable {
 </#if>
 <#if activeRecord>
     @Override
-    protected Serializable pkVal() {
+    public Serializable pkVal() {
     <#if keyPropertyName??>
         return this.${keyPropertyName};
     <#else>
